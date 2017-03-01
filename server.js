@@ -46,6 +46,12 @@ app.get('/about', (request, response) => {
   });
 });
 
+app.get('/projects', (request, response) => {
+  response.render('about.hbs', {
+    pageTitle: "Goobertown Projects",
+  });
+});
+
 app.get('/bad', (request, response) => {
   var error = {
     errorMessage: "You failed to succeed successfully.",
