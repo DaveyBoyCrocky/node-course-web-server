@@ -47,7 +47,7 @@ app.get('/about', (request, response) => {
 });
 
 app.get('/projects', (request, response) => {
-  response.render('about.hbs', {
+  response.render('projects.hbs', {
     pageTitle: "Goobertown Projects",
   });
 });
